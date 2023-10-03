@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    input, button{
+      width: 30%;
+      margin: 5px;
+      height: 20px;
+    }
+    .history{
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      width: 230px;
+      bottom: 0px;
+      background-color: black;
+      color: white;
+      padding: 30px;
+      cursor: pointer;
+      overflow-y: scroll;
+    }
+    .historyDiv{
+      border: white;
+      border-width: 1px;
+      margin-bottom: 20px;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>90° Triangel</h1>
+  <h3>Give two values and get every other value from your Triangel</h3>
+  <input type="text" id="ankatete" class="Ankatete input-style" placeholder="Ankatete">
+  <input type="text" id="gegenkatete" class="Gegenkatete input-style" placeholder="Gegenkatete">
+  <input type="text" id="hypotenuse" class="Hypotenuse input-style" placeholder="Hypotenuse">
+  <input type="text" id="wi" class="Alpha input-style" placeholder="Alpha">
+  <input type="text" id="wi2" class="90-Alpha input-style" placeholder="90-Alpha">
+
+  <button class="calc" id="calc">Calc</button>
+
+  
+
+  <div class="history" id="history">
+    <h5><p id="historybutton">History</p></h5>
+  </div>
+
+  <script src="trig.js"></script>    
+
+</body>
+</html>
